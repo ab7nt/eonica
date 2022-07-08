@@ -14,6 +14,8 @@
 </head>
 
 <body>
+  <div class="mouse-parallax-bg"></div>
+
   <main class="pt-4">
     <header>
       <div class="header-wrapper">
@@ -23,33 +25,36 @@
       </div>
     </header>
 
-    <section class="section-pleer mb-4">
-      <div class="container">
-        <div class="pleer">
-          <audio controls>
-            <source src="./Manu Dibango - Soul Makossa.mp3" type="audio/mp3">
-          </audio>
+    <div class="parallax-frame">
+      <div class="plyer-controls">
+        <div class="players-btns">
+          <button id="playBtn" class="player-btn play-btn">
+            PLAY
+          </button>
+          <button id="pauseBtn" class="player-btn pause-btn">
+            PAUSE
+          </button>
+          <button id="nextBtn" class="player-btn next-btn">
+            NEXT
+          </button>
+        </div>
+
+        <div class="player-info">
+        </div>
+
+        <div class="player-volume">
+          <button class="player-btn volume-btn">
+            VOLUME
+          </button>
+          <div class="volume-steps">
+          </div>
         </div>
       </div>
-    </section>
 
-    <section class="section-parallax">
-      <div class="container">
-        <div class="parallax-frame">
-          <div class="parallax-wrapper parallax-wrapper-left">
-            <div class="parallax-left">
-              <img class="parallax-img parallax-img-left" src="./img/65857_p.jpg">
-            </div>
-          </div>
-          <div class="parallax-wrapper parallax-wrapper-right">
-            <div class="parallax-right">
-              <img class="parallax-img parallax-img-right" src="./img/65857_p.jpg">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+      <audio id="pleer">
+        <source src="./Manu Dibango - Soul Makossa.mp3" type="audio/mp3">
+      </audio>
+    </div>
   </main>
 </body>
 
